@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://bootswatch.com/5/cosmo/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/898343a8e4.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <style type="text/css">
+        /*_____________________________________________________________________________*/
+    </style>
+</head>
+
+<body>
+    <section id="top">
+        <nav>
+            <h1 class="logo">R.</h1>
+
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
+            <ul class="mainMenu">
+                <li class="lia"><a href="index.html">Home</a></li>
+                <li class="lia"><a href="aboutme.html">About Me</a></li>
+                <li class="lia"><a href="services.html">My Services</a></li>
+                <li class="lia"><a href="contact.html">Contact Me</a></li>
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="empty">
+                d<br>d<br>d<br>d<br>d<br>d<br>
+
+            </div>
+            <div class="txt">
+                <h3>Hello! I'm</h3>
+                <br>
+                <h1>Richard <span>Abayizera</span></h1>
+                <br>
+                <h3>I am a <b>Web Developer</b></h3>
+            </div>
+            <div class="lower">
+                <ul>
+                    <li><b>Email:</b> ricardabayizera@gmail.com</li>
+                    <li><b>Phone:</b> +250786682083</li>
+                </ul>
+            </div>
+            <div class="lower-icon">
+
+            </div>
+        </div>
+    </section>
+    <script>
+        const mainMenu = document.querySelector('.mainMenu');
+        const closeMenu = document.querySelector('.closeMenu');
+        const openMenu = document.querySelector('.openMenu');
+
+        openMenu.addEventListener('click', show);
+        closeMenu.addEventListener('click', close);
+
+        function show() {
+            mainMenu.style.display = 'flex';
+            mainMenu.style.top = '0';
+        }
+
+        function close() {
+            mainMenu.style.top = '-110%';
+        }
+    </script>
+</body>
+
+</html>
