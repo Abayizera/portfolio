@@ -21,8 +21,6 @@ nav {
 nav .mainMenu {
     display: list-item;
     list-style: none;
-    margin-left: -35px;
-    /* border: 1px solid; */
 }
 
 nav .mainMenu li a {
@@ -65,7 +63,7 @@ nav .logo {
     width: 90vw;
     text-align: center;
     top: 0;
-    left: 0vw;
+    margin-left: 10vw;
 }
 
 .ul {
@@ -105,7 +103,8 @@ h1 span {
 
 .lower {
     width: 40vw;
-    margin-top: 30vh;
+    margin-top: 35vh;
+    margin-left: 2vw;
     border: 0px solid;
     text-align: left;
 }
@@ -116,6 +115,233 @@ li {
 
 .empty {
     color: #fff;
+}
+
+
+/*_________________________________________about____________________________________________*/
+
+.black-cont {
+    position: absolute;
+    top: 10vh;
+    left: 14vw;
+    height: 85vh;
+    width: 80vw;
+    border-radius: 15px;
+    background-color: #0F0F0F;
+}
+
+img {
+    position: absolute;
+    top: 5vh;
+    left: 6vw;
+    height: 70vh;
+    width: 25vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: #686464 10px 10px 10px, #686464 10px 10px 10px;
+}
+
+.context {
+    position: relative;
+    left: 37vw;
+    top: 5vh;
+    width: 36vw;
+    border: 0px solid wheat;
+}
+
+.context h3 {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    text-align: start;
+    padding-bottom: 10px;
+    padding-top: 35px;
+}
+
+.context p {
+    color: #8f8b8b;
+    text-align: start;
+    padding: 3px;
+}
+
+.ula {
+    padding-left: 10px;
+    padding-top: 30%;
+}
+
+.lia a {
+    font-size: large;
+    text-decoration: none;
+    color: white;
+}
+
+.lia a:hover {
+    /* font-size: large;
+text-decoration: none; */
+    color: #1A1818;
+}
+
+.p {
+    text-align: left;
+}
+
+
+/*_____________________________________________services__________________________________________________________*/
+
+.container-s {
+    width: 85vw;
+    text-align: center;
+    top: 10vh;
+    margin-left: 10vw;
+}
+
+.hea {
+    background-color: #D27C2C;
+    height: 30%;
+    padding: 10px;
+    margin: 0;
+}
+
+p {
+    padding: 10px;
+}
+
+.ulo {
+    display: inline-block;
+}
+
+table {
+    text-align: left;
+    padding: 0;
+}
+
+h4 {
+    text-align: left;
+    padding: 10px;
+}
+
+.p {
+    text-align: left;
+}
+
+.service {
+    display: flex;
+    padding: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10vh;
+}
+
+.service-box {
+    /* position: absolute; */
+    margin-left: 2vw;
+    padding: 0;
+    height: 35vh;
+    width: 35vw;
+    border: 1px solid;
+}
+
+
+/*__________________________________contact__________________________________________________*/
+
+#form {
+    width: 300px;
+    margin-top: 10vh;
+    margin-left: 10%;
+    padding: 20px;
+    background-color: rgba(24, 23, 23, 0.39);
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+#form h2 {
+    color: #0f2027;
+    text-align: center;
+}
+
+#form button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+    background-color: rgb(41, 57, 194);
+    border: none;
+    border-radius: 4px;
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 12px;
+    padding: 10px;
+    width: 100%;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control textarea {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 12px;
+    padding: 10px;
+    width: 100%;
+}
+
+.input-control textarea:focus {
+    outline: 0;
+}
+
+.input-control.success textarea {
+    border-color: #09c372;
+}
+
+.input-control.error textarea {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 10px;
+    height: 13px;
+}
+
+.container-c {
+    display: flex;
+    width: 85vw;
+    position: absolute;
+    text-align: left;
+    top: 0;
+    left: 10vw;
+}
+
+.contacts {
+    border: 0px solid;
+    height: fit-content;
+    width: 30%;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.contacts p {
+    padding: 20px;
 }
 
 
@@ -202,5 +428,56 @@ li {
     }
     .txt {
         margin-top: 30%;
+    }
+    /*_________________about__________________________________________*/
+    .black-cont {
+        width: 90%;
+        height: 100vh;
+        margin-left: -30px;
+        border-radius: 15px;
+        background-color: #0F0F0F;
+    }
+    img {
+        height: 40vh;
+        width: 80vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 15px;
+        box-shadow: #686464 10px 10px 10px, #686464 10px 10px 10px;
+    }
+    .context {
+        margin-top: 42vh;
+        margin-left: -100px;
+        width: 80vw;
+        border: 0px solid wheat;
+    }
+    /*___________________________service_______________________________________*/
+    .container-s {
+        width: 95vw;
+        margin-left: 0;
+    }
+    .service {
+        width: 100%;
+        display: block;
+    }
+    .service-box {
+        padding: 0;
+        height: 25vh;
+        width: 100%;
+        margin-top: 10px;
+        border: 1px solid;
+    }
+    /*_______________________________contact____________________________*/
+    .container-c {
+        display: block;
+        width: 85vw;
+        top: 0;
+        left: 1vw;
+    }
+    .contacts {
+        border: 0px solid;
+        height: fit-content;
+        width: 100%;
+        margin-top: 10%;
     }
 }

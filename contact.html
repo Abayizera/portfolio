@@ -5,113 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://bootswatch.com/5/cosmo/bootstrap.min.css">
-    <script src="https://kit.fontawesome.com/898343a8e4.js" crossorigin="anonymous"></script>
+
     <title>Contact Me</title>
-    <link rel="stylesheet" href="css/style.css">
-    <style type="text/css">
-        #form {
-            width: 300px;
-            margin-top: 10vh;
-            margin-left: 10%;
-            padding: 20px;
-            background-color: rgba(24, 23, 23, 0.39);
-            border-radius: 4px;
-            font-size: 12px;
-        }
-        
-        #form h2 {
-            color: #0f2027;
-            text-align: center;
-        }
-        
-        #form button {
-            padding: 10px;
-            margin-top: 10px;
-            width: 100%;
-            color: white;
-            background-color: rgb(41, 57, 194);
-            border: none;
-            border-radius: 4px;
-        }
-        
-        .input-control {
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .input-control input {
-            border: 2px solid #f0f0f0;
-            border-radius: 4px;
-            display: block;
-            font-size: 12px;
-            padding: 10px;
-            width: 100%;
-        }
-        
-        .input-control input:focus {
-            outline: 0;
-        }
-        
-        .input-control.success input {
-            border-color: #09c372;
-        }
-        
-        .input-control.error input {
-            border-color: #ff3860;
-        }
-        
-        .input-control textarea {
-            border: 2px solid #f0f0f0;
-            border-radius: 4px;
-            display: block;
-            font-size: 12px;
-            padding: 10px;
-            width: 100%;
-        }
-        
-        .input-control textarea:focus {
-            outline: 0;
-        }
-        
-        .input-control.success textarea {
-            border-color: #09c372;
-        }
-        
-        .input-control.error textarea {
-            border-color: #ff3860;
-        }
-        
-        .input-control .error {
-            color: #ff3860;
-            font-size: 10px;
-            height: 13px;
-        }
-        
-        .container-c {
-            display: flex;
-            width: 85vw;
-            position: absolute;
-            text-align: center;
-            top: 0;
-            left: 10vw;
-        }
-    </style>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <section id="top">
-        <div class="menu">
-            <h1 class="h1">R.</h1>
-            <ul class="ula">
+        <nav>
+            <h1 class="logo">R.</h1>
+
+            <div class="openMenu"><i class="fa fa-bars">Menu</i></div>
+            <ul class="mainMenu">
                 <li class="lia"><a href="index.html">Home</a></li>
                 <li class="lia"><a href="aboutme.html">About Me</a></li>
                 <li class="lia"><a href="services.html">My Services</a></li>
                 <li class="lia"><a href="contact.html">Contact Me</a></li>
-
+                <div class="closeMenu"><i class="fa fa-times">X</i></div>
             </ul>
-        </div>
+        </nav>
         <div class="container-c">
             <form id="form" action="/">
                 <h2>Contact Me</h2>
@@ -202,6 +114,22 @@
         }
 
     };
+
+    const mainMenu = document.querySelector('.mainMenu');
+    const closeMenu = document.querySelector('.closeMenu');
+    const openMenu = document.querySelector('.openMenu');
+
+    openMenu.addEventListener('click', show);
+    closeMenu.addEventListener('click', close);
+
+    function show() {
+        mainMenu.style.display = 'flex';
+        mainMenu.style.top = '0';
+    }
+
+    function close() {
+        mainMenu.style.top = '-110%';
+    }
 </script>
 
 </html>
